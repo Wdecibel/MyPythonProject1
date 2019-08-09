@@ -1,0 +1,39 @@
+面向对象
+
+def foo(name, age, gerder, content):
+    print(name, age, gerder, content)
+
+class Bar:
+    def foo(self, name, age, gerder, content):
+        print(name, age, gerder, content)
+
+obj = Bar()
+obj.foo(小明，10岁，男，上山去砍柴)
+obj.foo(小明，10岁，男，开车去东北)
+obj.foo(小明，10岁，男，最爱大保健)
+
+obj.foo(老李，90岁，男，上山去砍柴)
+obj.foo(老李，90岁，男，开车去东北)
+obj.foo(老李，90岁，男，最爱大保健)
+
+1.定义
+    函数：
+        def + 函数名（参数）
+
+    面向对象：
+        class =》 名字叫Bar类
+        def   =》 名字叫foo的方法
+            self
+2.执行
+    函数：
+        函数名（参数）
+    面向对象：
+        o = Bar() # 创建中间人（或称，对象或实例）
+        o.foo()
+
+
+
+
+
+
+

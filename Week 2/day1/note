@@ -1,0 +1,59 @@
+占位符
+    %s s = string
+    %d d = digit 整数
+    %f f = float 浮点数，约等于小数
+
+数据运算
+    数据类型初识
+        数字
+            整数 int(integer)
+                整型 short
+                长整型 long
+                in py3 已经不区分整型与长整型了，统一都叫整型
+        字符串
+        列表，元组
+            查
+                索引（下标），都是从0开始
+                切片
+                .count 查某个元素的出现次数
+                .index 根据内容找对应的位置
+                “haidilao ge” in a
+            增加
+                a.append()追加
+                a.insert(index, "内容")
+                a.extend 扩展
+            修改
+                a[index] = "新的值"
+                a[start : end] = [a, b, c ]
+            删除
+                remove("内容")
+                pop(index)
+                del a, del a [index]
+                a.clear() 清空
+            排序
+                sort
+                reverse
+            身份判断
+                >>> type(a) is list
+                True
+                >>>
+
+        购物车程序
+            salary = 500
+
+            1. iphone  5800
+            2. mac book 9000
+            3. coffee   32
+            4. python book  80
+            5. bicycle      1500
+            >>> :1
+                余额不足，差XXX钱
+            >>> :5
+                已加入bicycle到你的购物车，当前余额：3500
+            >>>:quit
+            您已购买以下商品
+            bicycle  1500
+            coffee   32
+
+            您的余额为：2970
+            欢迎下次光临

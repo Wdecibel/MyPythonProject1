@@ -1,0 +1,61 @@
+1.Python：支持函数式+面向对象
+2.函数式可以做所有的事，是否合适？
+3.示例：
+    小明，10岁，男，上山去砍柴
+    小明，10岁，男，开车去东北
+    小明，10岁，男，最爱大保健
+    老李，90岁，男，上山去砍柴
+    老李，90岁，男，开车去东北
+    老李，90岁，男，最爱大保健
+
+def foo(name, age, gerder, content):
+    print(name, age, gerder, content)
+
+foo(小明，10岁，男，上山去砍柴)
+foo(小明，10岁，男，开车去东北)
+foo(小明，10岁，男，最爱大保健)
+
+foo(老李，90岁，男，上山去砍柴)
+foo(老李，90岁，男，开车去东北)
+foo(老李，90岁，男，最爱大保健)
+=====>参数可能不太合适。
+
+# 第一次
+class Bar:
+    def foo(self, name, age, gerder, content):
+        print(name, age, gerder, content)
+
+obj = Bar()
+obj.foo(小明，10岁，男，上山去砍柴)
+obj.foo(小明，10岁，男，开车去东北)
+obj.foo(小明，10岁，男，最爱大保健)
+
+# self
+    self代指调用方法的对象（中间人）
+# 构造方法
+    特殊作用：
+        在
+            obj = 类名()
+                # 创建对象
+                # 通过对象执行类中的一个特殊方法
+
+class Bar:
+
+    def __init__(self):  #构造方法（构造函数）
+        print('123')
+
+z = Bar()
+print(z)
+
+
+
+
+
+
+
+
+
+
+
+
+
